@@ -1,0 +1,13 @@
+# Python
+python-analysis/.venv/
+__pycache__/
+*.pyc
+
+# Rust
+rust-core/target/
+
+# OS junk
+.DS_Store
+
+# Optional: keep results tracked (you WANT plots visible)
+# If you ever want to ignore raw CSV later, do it selectively

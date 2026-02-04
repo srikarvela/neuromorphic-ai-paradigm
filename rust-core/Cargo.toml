@@ -1,0 +1,17 @@
+[package]
+name = "neuromorphic_core"
+version = "0.1.0"
+edition = "2021"
+authors = ["Srikar Velavarthipati"]
+description = "Research-style software prototype exploring neuromorphic AI paradigms using spiking neural networks"
+license = "MIT"
+
+[lib]
+name = "neuromorphic_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "run_example"
+path = "src/main.rs"
+
+[dependencies]
