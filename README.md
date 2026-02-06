@@ -1,4 +1,4 @@
-# Neuromorphic AI Research-Style Prototype
+# Neuromorphic AI Research‑Style Prototype (Spiking Neural Networks with STDP)
 
 ## 1. What Is Neuromorphic Computing?
 
@@ -10,7 +10,15 @@ This project implements a research-style neuromorphic simulation pipeline center
 
 ## 3. Results and Key Takeaways
 
-The simulation produces temporally structured spike activity across neurons and demonstrates adaptive synaptic behavior through STDP. Spike raster plots show coherent firing patterns over time, while synaptic weight traces confirm that learning emerges purely from local spike timing interactions without any global error signal. Through this project, I gained a deeper understanding of event-driven computation, biologically inspired learning rules, and the practical challenges of building reproducible research pipelines. Working across Rust, Python, and Go also highlighted the strengths of each language: Rust for safe, high-performance simulation, Python for rapid scientific analysis and visualization, and Go for simple, reliable orchestration of experiments. Equally important, this work reinforced the value of system-level thinking—designing clean interfaces between components and choosing tools based on their strengths rather than forcing a single-language solution.
+The simulation produces temporally structured spike activity across neurons and demonstrates adaptive synaptic behavior through STDP. Spike raster plots show coherent firing patterns over time, while synaptic weight traces confirm that learning emerges purely from local spike timing interactions without any global error signal. 
+
+Through this project, I gained a deeper understanding of event‑driven computation, biologically inspired learning rules, and the practical challenges of building reproducible research pipelines. Working across multiple languages highlighted how different tools excel at different layers of a system: Rust for safe, high‑performance simulation, Python for rapid scientific analysis and visualization, and Go for simple, reliable orchestration of experiments. This reinforced the importance of system‑level design—clean interfaces, clear data contracts, and choosing languages based on their strengths rather than forcing a single‑stack solution.
+
+### Technology Stack
+
+• **Rust** — deterministic, high‑performance core simulation (neurons, synapses, spike events, STDP learning)  
+• **Go** — experiment orchestration, reproducibility, and pipeline control  
+• **Python** — post‑processing, spike raster visualization, and synaptic weight analysis
 
 ### Visual Results
 
@@ -24,7 +32,7 @@ The simulation produces temporally structured spike activity across neurons and 
 
 ## 4. Algorithms, Equations, and How to Run
 
-Learning is governed by Spike-Timing-Dependent Plasticity, where synaptic weight updates depend on the relative timing between pre- and post-synaptic spikes:
+Learning is governed by **Spike‑Timing‑Dependent Plasticity (STDP)**, a local learning rule where synaptic weight updates depend on the relative timing between pre‑ and post‑synaptic spikes:
 
 If Δt = t_post − t_pre
 
